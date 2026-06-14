@@ -71,3 +71,7 @@ li{
 li:hover{
     background:#eef2ff;
 }
+small{
+    color: #666;
+    font-size: 12px;
+}

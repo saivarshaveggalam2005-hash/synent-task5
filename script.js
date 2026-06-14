@@ -19,6 +19,8 @@ function renderTasks() {
                 onclick="toggleTask(${index})">
                 ${task.text}
             </span>
+            <br>
+            <small>${task.createdAt}</small>
 
             <button onclick="deleteTask(${index})">
                 Delete
@@ -42,9 +44,10 @@ function addTask() {
 
     tasks.push({
         text: input.value,
-        completed: false
+        completed: false,
+        createdAt: new Date().toLocaleString()
     });
-
+    
     saveTasks();
     renderTasks();
 
