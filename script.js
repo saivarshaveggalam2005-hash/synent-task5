@@ -26,6 +26,8 @@ function renderTasks() {
         `;
 
         taskList.appendChild(li);
+        document.getElementById("taskCount").innerText =
+       `Total Tasks: ${tasks.length}`;
     });
 }
 

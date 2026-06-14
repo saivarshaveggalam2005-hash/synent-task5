@@ -64,8 +64,8 @@ li{
 }
 
 .completed{
-    text-decoration:line-through;
-    color:gray;
+    text-decoration: line-through;
+    color: gray;
 }
 
 li:hover{
