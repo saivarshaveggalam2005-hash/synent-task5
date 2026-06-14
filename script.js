@@ -66,5 +66,10 @@ function toggleTask(index) {
     saveTasks();
     renderTasks();
 }
+function clearTasks(){
+    tasks = [];
+    saveTasks();
+    renderTasks();
+}
 
 renderTasks();
