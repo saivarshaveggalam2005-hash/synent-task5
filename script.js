@@ -54,12 +54,13 @@ function addTask() {
     input.value = "";
 }
 
-function deleteTask(index) {
+function deleteTask(index){
 
-    tasks.splice(index, 1);
-
-    saveTasks();
-    renderTasks();
+    if(confirm("Delete this task?")){
+        tasks.splice(index,1);
+        saveTasks();
+        renderTasks();
+    }
 }
 
 function toggleTask(index) {
